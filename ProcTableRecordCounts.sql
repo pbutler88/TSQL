@@ -11,7 +11,7 @@ Other ideas... Add statistics info
                Add Threshold ratings
 ----------------------------------------------------------------------------
 */
-DECLARE @StoredProcedureName Varchar(255) = 'ODS_SP_EI_DUAL_D_CLONE_MEMBER';  -- <Your Proc Name Here>
+DECLARE @StoredProcedureName Varchar(255) = '<Your Proc Name Here>'; 
 DECLARE @retval int   
 DECLARE @sSQL nvarchar(500);
 DECLARE @ParmDefinition nvarchar(500);

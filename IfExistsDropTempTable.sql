@@ -1,12 +1,11 @@
-IF OBJECT_ID('tempdb..#findgap') IS NOT NULL drop table #findgap
+IF OBJECT_ID('tempdb..#MyTestTempTableName') IS NOT NULL drop table #MyTestTempTableName
 
-create table #findgap  
+create table #MyTestTempTableName
 (
-MEME_CK int,   
-CSPD_CAT char(1),   
-MEES_EFF_DT datetime,   
-MEES_TERM_DT datetime,  
-idx int identity(1,1)
+ID int,   
+CategoryType char(1),   
+CategoryEffectiveDate datetime,   
+CategoryTerminationDate datetime
 )            
 
-Select * from #findgap
+Select * from #MyTestTempTableName

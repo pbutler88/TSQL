@@ -14,7 +14,8 @@ BEGIN
 END
 
 BEGIN TRAN
-	--DO Stuff
+	--To trigger a issue divide by 0 as an example
+	SELECT 1
 
 	IF @@Error <> 0  OR @@RowCount <> 1
 	BEGIN
@@ -52,5 +53,3 @@ END_FINALLY:
 		RAISERROR ('You had an open transaction so it was rolled back, please fix the script to close the transaction in order to apply your changes ',19,1) WITH LOG
 		ROLLBACK TRAN
 	END
-
-

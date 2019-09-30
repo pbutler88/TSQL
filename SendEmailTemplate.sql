@@ -4,8 +4,8 @@ DECLARE @BODY Varchar(1000),
 		@SUBJECT Varchar(255)
 
 SET @BODY = 'This is a test email'   
-SET @FROM = 'Paul_Butler@Corvel.com'  
-SET @TO = 'Paul_Butler@Corvel.com;'  
+SET @FROM = 'Paul_Butler@YourDomain.com'  
+SET @TO = 'Paul_Butler@YourDomain.com;'  
 SET @SUBJECT = 'Test' 
      
 PRINT 'MAIL SENT'  

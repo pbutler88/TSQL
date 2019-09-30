@@ -6,13 +6,13 @@ Create Table #TempProc
     VersionNumber Varchar(255) NULL
 )
 
---Loop through All of the ODS_EI_ Procedures     
+--Loop through Procedures using a wildcard     
 --PERFORM ACTIONS
 DECLARE curRequest INSENSITIVE Cursor FOR 
 
 Select Name as ProcName
 from sysobjects as A
-Where Name like 'ODS_SP_EI_%'	and xtype = 'P'
+Where Name like '<AddYourSearchCriteriaHere>%'	and xtype = 'P'
 Order by Name
 
 Open curRequest
